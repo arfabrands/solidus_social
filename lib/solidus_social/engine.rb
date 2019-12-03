@@ -16,7 +16,7 @@ module SolidusSocial
       Rails.application.reloader.after_class_unload do
         # Reload and decorate the spree user class immediately after it is
         # unloaded so that it is available to devise when loading routes
-        load File.join(__dir__, '../../app/models/spree/user_decorator.rb')
+        load File.join(__dir__, '../../app/decorators/models/solidus_social/spree/user_decorator.rb')
       end
     end
 
